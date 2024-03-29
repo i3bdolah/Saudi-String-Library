@@ -11,51 +11,72 @@ int main()
 
 	cout << "The String : " << String.value << "\n\n";
 
-	cout << setw(30) << "CountLetter('A') = ";
+	cout << setw(35) << "CountLetter('A') = ";
 	cout << String.CountLetter('A') << endl;
 
-	cout << setw(30) << "CountLower() = ";
+	cout << setw(35) << "CountLower() = ";
 	cout << String.CountLower() << endl;
 
-	cout << setw(30) << "CountUpper() = ";
+	cout << setw(35) << "CountUpper() = ";
 	cout << String.CountUpper() << endl;
 
-	cout << setw(30) << "CountVowel() = ";
+	cout << setw(35) << "CountVowel() = ";
 	cout << String.CountVowel() << endl;
 
-	cout << setw(30) << "CountWords('ThE') = ";
-	cout << String.CountWords("ThE") << endl;
+	cout << setw(35) << "CountWords() = ";
+	cout << String.CountWords() << endl;
 
-	cout << setw(30) << "FirstInWords() = ";
+	cout << setw(35) << "FirstInWords() = ";
 	cout << String.FirstInWords() << endl;
 
-	cout << setw(30) << "InvertAll() = ";
+	cout << setw(35) << "InvertAll() = ";
 	cout << String.InvertAll() << endl;
 
-	cout << setw(30) << "SaudiString::InvertCase('M') = ";
+	cout << setw(35) << "InvertCase('M') = ";
 	cout << SaudiString::InvertCase('M') << endl;
 
-	cout << setw(30) << "SaudiString::IsLower('M') = ";
+	cout << setw(35) << "IsLower('M') = ";
 	cout << SaudiString::IsLower('M') << endl;
 
-	cout << setw(30) << "SaudiString::IsUpper('M') = ";
+	cout << setw(35) << "IsUpper('M') = ";
 	cout << SaudiString::IsUpper('M') << endl;
 
-	cout << setw(30) << "SaudiString::IsUpper('M') = ";
+	cout << setw(35) << "IsVowel('M') = ";
 	cout << SaudiString::IsVowel('M') << endl;
 
-	cout << setw(30) << "Length() = ";
+	cout << setw(35) << "Length() = ";
 	cout << String.Length() << endl;
 
-	cout << setw(30) << "LowerAll() = ";
+	cout << setw(35) << "LowerAll() = ";
 	cout << String.LowerAll() << endl;
 
-	cout << setw(30) << "LowerAllFirsts() = ";
+	cout << setw(35) << "LowerAllFirsts() = ";
 	cout << String.LowerAllFirsts() << endl;
 
-	cout << setw(30) << "UpperAll() = ";
+	cout << setw(35) << "UpperAll() = ";
 	cout << String.UpperAll() << endl;
 
-	cout << setw(30) << "UpperAllFirsts() = ";
+	cout << setw(35) << "UpperAllFirsts() = ";
 	cout << String.UpperAllFirsts() << endl;
+	
+	cout << setw(35) << "TrimLeft(' Abdullah Ban ') = ";
+	cout  <<  "|" << SaudiString::TrimLeft(" Abdullah Ban ") << "|" << endl;
+	
+	cout << setw(35) << "TrimRight(' Abdullah Ban ') = ";
+	cout << "|" << SaudiString::TrimRight(" Abdullah Ban ") << "|" << endl;
+
+	cout << setw(35) << "TrimAll(' Abdullah Ban ') = ";
+	cout << "|" << SaudiString::TrimAll(" Abdullah Ban ") << "|" << endl;
+
+	cout << setw(35) << "ReplaceWord('ThE','A') = ";
+	cout << String.ReplaceWord("ThE","A") << endl;
+
+	cout << setw(35) << "RemovePunctuations() = ";
+	cout << String.RemovePunctuations() << endl;
+
+	cout << setw(35) << "ReverseWords() = ";
+	cout << String.ReverseWords() << endl;
+
+	cout << setw(35) << "PrintWordSeparately() = ";
+	String.PrintWordSeparately();
 }

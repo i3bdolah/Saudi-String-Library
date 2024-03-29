@@ -246,14 +246,14 @@ public:
 			stringInRange = str.substr(0, pos);
 			if (stringInRange != " ")
 			{
-				cout << '|' << stringInRange << '|' << endl;
+				cout << "{" << stringInRange << "}, ";
 			}
 
 			str.erase(0, pos + delim.length());
 		}
 		if (str != "")
 		{
-			cout << '|' << str << '|' << endl;
+			cout << "{" << str << "}; " << endl;
 		}
 	}
 
@@ -271,7 +271,7 @@ public:
 		while ((pos = str.find(delim)) != string::npos)
 		{
 			stringInRange = str.substr(0, pos);
-			if (stringInRange != " ")
+			if (stringInRange != "")
 			{
 				//cout << '|' << stringInRange << '|' << endl;
 				counter++;
@@ -322,7 +322,7 @@ public:
 	static void PrintStringVector(vector <string> vector) {
 
 		cout << '\n';
-		cout << "Tokens = " << vector.size() << endl;
+		cout << "Size = " << vector.size() << endl;
 		for (string& elementInVector : vector)
 		{
 			cout << '|' << elementInVector << '|' << endl;
@@ -385,14 +385,20 @@ public:
 		return wordsJoined.substr(0, wordsJoined.length() - separator.length());
 	}
 
-	static vector <string> ReverseStringWords(vector <string> vector1) {
+	static string ReverseWords(string str) {
+
+		vector <string> vector1 = Split(str, " ");
 		vector <string> newVector;
 
 		for (int i = vector1.size() - 1; i >= 0; i--)
 		{
 			newVector.push_back(vector1.at(i));
 		}
-		return newVector;
+		return Join(newVector, " ");
+	}
+
+	string ReverseWords() {
+		return ReverseWords(_value);
 	}
 
 	static string ReplaceWord(string targeted, string replacement, string allWords, bool isCaseSensitive = 1) {
