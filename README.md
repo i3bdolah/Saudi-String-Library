@@ -1,3 +1,5 @@
+![image](https://github.com/i3bdolah/Saudi-String-Library/assets/80276711/2e70a28e-2271-4947-a483-298b297c8c87)
+
 # Saudi String Library
 
 The Saudi String Library is a C++ project aimed at providing a set of string manipulation functionalities to facilitate various text processing tasks. This library offers a range of operations, from basic tasks like counting characters to more complex operations such as word reversal and word replacement.
