@@ -2,7 +2,7 @@
 
 # Saudi String Library
 
-The Saudi String Library is a C++ project aimed at providing a set of string manipulation functionalities to facilitate various text processing tasks. This library offers a range of operations, from basic tasks like counting characters to more cohttps://github.com/i3bdolah/Saudi-String-Library/blob/master/README.mdmplex operations such as word reversal and word replacement.
+The Saudi String Library is a C++ project aimed at providing a set of string manipulation functionalities to facilitate various text processing tasks. This library offers a range of operations, from basic tasks like counting characters to more complex operations such as word reversal and word replacement.
 
 ## Importance of the Saudi String Library
 
